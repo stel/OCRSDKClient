@@ -6,7 +6,11 @@ See also [ABBYY Cloud OCR SDK API Reference](http://ocrsdk.com/documentation/api
 
 ##Ussage
 
-OCRSDKClient is available via [Cocoa Pods](http://cocoapods.org).
+OCRSDKClient is available via [Cocoa Pods](http://cocoapods.org):
+
+```Ruby
+pod "OCRSDKClient"
+```
 
 ## Requirements
 
