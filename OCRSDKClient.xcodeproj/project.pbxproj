@@ -16,6 +16,7 @@
 		0AE8EC6E174D388D007E6365 /* libOCRSDKClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE8EC55174D388D007E6365 /* libOCRSDKClient.a */; };
 		0AE8EC74174D388D007E6365 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AE8EC72174D388D007E6365 /* InfoPlist.strings */; };
 		0AE8EC77174D388D007E6365 /* OCRSDKClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8EC76174D388D007E6365 /* OCRSDKClientTests.m */; };
+		970C0C3745D046EBA3AD3D80 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7BFDA1168848459332CC68 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0AE8EC73174D388D007E6365 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AE8EC75174D388D007E6365 /* OCRSDKClientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRSDKClientTests.h; sourceTree = "<group>"; };
 		0AE8EC76174D388D007E6365 /* OCRSDKClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRSDKClientTests.m; sourceTree = "<group>"; };
+		1AE8846779E04AC399F65F8D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		AC7BFDA1168848459332CC68 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE8EC59174D388D007E6365 /* Foundation.framework in Frameworks */,
+				970C0C3745D046EBA3AD3D80 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,7 @@
 				0AE8EC6F174D388D007E6365 /* Tests */,
 				0AE8EC57174D388D007E6365 /* Frameworks */,
 				0AE8EC56174D388D007E6365 /* Products */,
+				1AE8846779E04AC399F65F8D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +108,7 @@
 				0AE8EC58174D388D007E6365 /* Foundation.framework */,
 				0AE8EC67174D388D007E6365 /* SenTestingKit.framework */,
 				0AE8EC69174D388D007E6365 /* UIKit.framework */,
+				AC7BFDA1168848459332CC68 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AE8EC7A174D388D007E6365 /* Build configuration list for PBXNativeTarget "OCRSDKClient" */;
 			buildPhases = (
+				A48D5B7C4817476EBFB9A518 /* Check Pods Manifest.lock */,
 				0AE8EC51174D388D007E6365 /* Sources */,
 				0AE8EC52174D388D007E6365 /* Frameworks */,
 				0AE8EC53174D388D007E6365 /* CopyFiles */,
+				ED248BAB34B940878EE24741 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,6 +234,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		A48D5B7C4817476EBFB9A518 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		ED248BAB34B940878EE24741 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -323,9 +359,9 @@
 		};
 		0AE8EC7B174D388D007E6365 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE8846779E04AC399F65F8D /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/OCRSDKClient.dst;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -333,9 +369,9 @@
 		};
 		0AE8EC7C174D388D007E6365 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE8846779E04AC399F65F8D /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/OCRSDKClient.dst;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
