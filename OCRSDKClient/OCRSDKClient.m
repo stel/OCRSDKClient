@@ -79,17 +79,16 @@ static NSString * const kOCRSDKInstallationId = @"com.abbyy.ocrsdk.installation-
 
 #pragma mark -
 
-- (void)activateInstallation:(BOOL)force
-					 success:(void (^)(void))success
-					 failure:(void (^)(NSError *error))failure
+- (void)activateInstallationWithDeviceId:(NSString *)deviceId
+								 success:(void (^)(void))success
+								 failure:(void (^)(NSError *error))failure
+								   force:(BOOL)force
 {
 	
 	NSParameterAssert(self.applicationId);
 	NSParameterAssert(self.password);
 	
 	if (self.installationId == nil || force) {
-		NSString *deviceId = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-		
 		[self getPath:@"activateNewInstallation" parameters:@{@"deviceId": deviceId} success:^(AFHTTPRequestOperation *operation, id responseObject) {
 			NSDictionary *responseDictionary = [NSDictionary dictionaryWithXMLData:responseObject];
 			
@@ -98,7 +97,7 @@ static NSString * const kOCRSDKInstallationId = @"com.abbyy.ocrsdk.installation-
 			
 			NSParameterAssert(self.installationId);
 			
-			[self activateInstallation:NO success:success failure:failure];
+			[self activateInstallationWithDeviceId:deviceId success:success failure:failure force:NO];
 		} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 			if (failure != nil) {
 				failure(error);

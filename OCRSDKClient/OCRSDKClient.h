@@ -75,15 +75,18 @@
 /**
  Activates your application installation on current device.
  
- @param force If YES or installation hasn't already been activated on current device asks server for installation ID, otherwise takes installation ID from user defaults.
+ @param deviceId An unique identifier of the current device.
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and no arguments.
  @param failure A block object to be executed when the request operation finishes unsuccessfully. This block has no return value and takes a single argument: the `NSError` object describing error that occurred.
  
+ @param force If YES or installation hasn't already been activated on current device asks server for installation ID, otherwise takes installation ID from user defaults.
+ 
  @discussion You should call this method before performing any image processing operations.
  */
-- (void)activateInstallation:(BOOL)force
-					 success:(void (^)(void))success
-					 failure:(void (^)(NSError *error))failure;
+- (void)activateInstallationWithDeviceId:(NSString *)deviceId
+								 success:(void (^)(void))success
+								 failure:(void (^)(NSError *error))failure
+								   force:(BOOL)force;
 
 /// @name Performing Image Processing Operations
 
