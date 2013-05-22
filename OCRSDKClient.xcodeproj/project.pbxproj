@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AE8EC59174D388D007E6365 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE8EC58174D388D007E6365 /* Foundation.framework */; };
+		0AE8EC5E174D388D007E6365 /* OCRSDKClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AE8EC5D174D388D007E6365 /* OCRSDKClient.h */; };
+		0AE8EC60174D388D007E6365 /* OCRSDKClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8EC5F174D388D007E6365 /* OCRSDKClient.m */; };
+		0AE8EC68174D388D007E6365 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE8EC67174D388D007E6365 /* SenTestingKit.framework */; };
+		0AE8EC6A174D388D007E6365 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE8EC69174D388D007E6365 /* UIKit.framework */; };
+		0AE8EC6B174D388D007E6365 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE8EC58174D388D007E6365 /* Foundation.framework */; };
+		0AE8EC6E174D388D007E6365 /* libOCRSDKClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE8EC55174D388D007E6365 /* libOCRSDKClient.a */; };
+		0AE8EC74174D388D007E6365 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AE8EC72174D388D007E6365 /* InfoPlist.strings */; };
+		0AE8EC77174D388D007E6365 /* OCRSDKClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8EC76174D388D007E6365 /* OCRSDKClientTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AE8EC6C174D388D007E6365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AE8EC4D174D388D007E6365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AE8EC54174D388D007E6365;
+			remoteInfo = OCRSDKClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AE8EC53174D388D007E6365 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				0AE8EC5E174D388D007E6365 /* OCRSDKClient.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0AE8EC55174D388D007E6365 /* libOCRSDKClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOCRSDKClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE8EC58174D388D007E6365 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0AE8EC5D174D388D007E6365 /* OCRSDKClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRSDKClient.h; sourceTree = "<group>"; };
+		0AE8EC5F174D388D007E6365 /* OCRSDKClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRSDKClient.m; sourceTree = "<group>"; };
+		0AE8EC66174D388D007E6365 /* OCRSDKClientTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCRSDKClientTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE8EC67174D388D007E6365 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0AE8EC69174D388D007E6365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0AE8EC71174D388D007E6365 /* OCRSDKClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCRSDKClientTests-Info.plist"; sourceTree = "<group>"; };
+		0AE8EC73174D388D007E6365 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AE8EC75174D388D007E6365 /* OCRSDKClientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRSDKClientTests.h; sourceTree = "<group>"; };
+		0AE8EC76174D388D007E6365 /* OCRSDKClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRSDKClientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AE8EC52174D388D007E6365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE8EC59174D388D007E6365 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE8EC62174D388D007E6365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE8EC68174D388D007E6365 /* SenTestingKit.framework in Frameworks */,
+				0AE8EC6A174D388D007E6365 /* UIKit.framework in Frameworks */,
+				0AE8EC6B174D388D007E6365 /* Foundation.framework in Frameworks */,
+				0AE8EC6E174D388D007E6365 /* libOCRSDKClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AE8EC4C174D388D007E6365 = {
+			isa = PBXGroup;
+			children = (
+				0AE8EC5A174D388D007E6365 /* Classes */,
+				0AE8EC6F174D388D007E6365 /* Tests */,
+				0AE8EC57174D388D007E6365 /* Frameworks */,
+				0AE8EC56174D388D007E6365 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AE8EC56174D388D007E6365 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AE8EC55174D388D007E6365 /* libOCRSDKClient.a */,
+				0AE8EC66174D388D007E6365 /* OCRSDKClientTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AE8EC57174D388D007E6365 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AE8EC58174D388D007E6365 /* Foundation.framework */,
+				0AE8EC67174D388D007E6365 /* SenTestingKit.framework */,
+				0AE8EC69174D388D007E6365 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AE8EC5A174D388D007E6365 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0AE8EC5D174D388D007E6365 /* OCRSDKClient.h */,
+				0AE8EC5F174D388D007E6365 /* OCRSDKClient.m */,
+			);
+			name = Classes;
+			path = OCRSDKClient;
+			sourceTree = "<group>";
+		};
+		0AE8EC6F174D388D007E6365 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0AE8EC75174D388D007E6365 /* OCRSDKClientTests.h */,
+				0AE8EC76174D388D007E6365 /* OCRSDKClientTests.m */,
+				0AE8EC70174D388D007E6365 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0AE8EC70174D388D007E6365 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AE8EC71174D388D007E6365 /* OCRSDKClientTests-Info.plist */,
+				0AE8EC72174D388D007E6365 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AE8EC54174D388D007E6365 /* OCRSDKClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE8EC7A174D388D007E6365 /* Build configuration list for PBXNativeTarget "OCRSDKClient" */;
+			buildPhases = (
+				0AE8EC51174D388D007E6365 /* Sources */,
+				0AE8EC52174D388D007E6365 /* Frameworks */,
+				0AE8EC53174D388D007E6365 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCRSDKClient;
+			productName = OCRSDKClient;
+			productReference = 0AE8EC55174D388D007E6365 /* libOCRSDKClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0AE8EC65174D388D007E6365 /* OCRSDKClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE8EC7D174D388D007E6365 /* Build configuration list for PBXNativeTarget "OCRSDKClientTests" */;
+			buildPhases = (
+				0AE8EC61174D388D007E6365 /* Sources */,
+				0AE8EC62174D388D007E6365 /* Frameworks */,
+				0AE8EC63174D388D007E6365 /* Resources */,
+				0AE8EC64174D388D007E6365 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AE8EC6D174D388D007E6365 /* PBXTargetDependency */,
+			);
+			name = OCRSDKClientTests;
+			productName = OCRSDKClientTests;
+			productReference = 0AE8EC66174D388D007E6365 /* OCRSDKClientTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AE8EC4D174D388D007E6365 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Dmitry Obukhov";
+			};
+			buildConfigurationList = 0AE8EC50174D388D007E6365 /* Build configuration list for PBXProject "OCRSDKClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0AE8EC4C174D388D007E6365;
+			productRefGroup = 0AE8EC56174D388D007E6365 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AE8EC54174D388D007E6365 /* OCRSDKClient */,
+				0AE8EC65174D388D007E6365 /* OCRSDKClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AE8EC63174D388D007E6365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE8EC74174D388D007E6365 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AE8EC64174D388D007E6365 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AE8EC51174D388D007E6365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE8EC60174D388D007E6365 /* OCRSDKClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE8EC61174D388D007E6365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE8EC77174D388D007E6365 /* OCRSDKClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AE8EC6D174D388D007E6365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AE8EC54174D388D007E6365 /* OCRSDKClient */;
+			targetProxy = 0AE8EC6C174D388D007E6365 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AE8EC72174D388D007E6365 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AE8EC73174D388D007E6365 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AE8EC78174D388D007E6365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0AE8EC79174D388D007E6365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AE8EC7B174D388D007E6365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OCRSDKClient.dst;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0AE8EC7C174D388D007E6365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OCRSDKClient.dst;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0AE8EC7E174D388D007E6365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				INFOPLIST_FILE = "OCRSDKClientTests/OCRSDKClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0AE8EC7F174D388D007E6365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				INFOPLIST_FILE = "OCRSDKClientTests/OCRSDKClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AE8EC50174D388D007E6365 /* Build configuration list for PBXProject "OCRSDKClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE8EC78174D388D007E6365 /* Debug */,
+				0AE8EC79174D388D007E6365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE8EC7A174D388D007E6365 /* Build configuration list for PBXNativeTarget "OCRSDKClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE8EC7B174D388D007E6365 /* Debug */,
+				0AE8EC7C174D388D007E6365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE8EC7D174D388D007E6365 /* Build configuration list for PBXNativeTarget "OCRSDKClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE8EC7E174D388D007E6365 /* Debug */,
+				0AE8EC7F174D388D007E6365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AE8EC4D174D388D007E6365 /* Project object */;
+}
