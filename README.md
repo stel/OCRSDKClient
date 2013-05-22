@@ -2,7 +2,7 @@
 
 An `AFHTTPClient` subclass for interacting with the [ABBYY Cloud OCR SDK webservice API](http://ocrsdk.com) for iOS.
 
-See also [ABBYY Cloud OCR SDK API Reference](http://ocrsdk.com/documentation/apireference).
+See also [ABBYY Cloud OCR SDK API Reference](http://ocrsdk.com/documentation/apireference) and [example projects](https://github.com/abbyysdk/ocrsdk.com).
 
 ##Ussage
 
