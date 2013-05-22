@@ -10,8 +10,8 @@ OCRSDKClient is available via [Cocoa Pods](http://cocoapods.org).
 
 ## Requirements
 
-- AFNetworking
-- XMLDictionary
+- [AFNetworking](https://github.com/AFNetworking/AFNetworking)
+- [XMLDictionary](https://github.com/nicklockwood/XMLDictionary)
 
 Also OCRSDKClient uses ARC.
 
