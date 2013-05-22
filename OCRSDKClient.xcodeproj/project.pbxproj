@@ -11,7 +11,6 @@
 		0AE8EC5E174D388D007E6365 /* OCRSDKClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AE8EC5D174D388D007E6365 /* OCRSDKClient.h */; };
 		0AE8EC60174D388D007E6365 /* OCRSDKClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8EC5F174D388D007E6365 /* OCRSDKClient.m */; };
 		0AE8EC68174D388D007E6365 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE8EC67174D388D007E6365 /* SenTestingKit.framework */; };
-		0AE8EC6A174D388D007E6365 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE8EC69174D388D007E6365 /* UIKit.framework */; };
 		0AE8EC6B174D388D007E6365 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE8EC58174D388D007E6365 /* Foundation.framework */; };
 		0AE8EC6E174D388D007E6365 /* libOCRSDKClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE8EC55174D388D007E6365 /* libOCRSDKClient.a */; };
 		0AE8EC74174D388D007E6365 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AE8EC72174D388D007E6365 /* InfoPlist.strings */; };
@@ -49,7 +48,6 @@
 		0AE8EC5F174D388D007E6365 /* OCRSDKClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRSDKClient.m; sourceTree = "<group>"; };
 		0AE8EC66174D388D007E6365 /* OCRSDKClientTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCRSDKClientTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE8EC67174D388D007E6365 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		0AE8EC69174D388D007E6365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		0AE8EC71174D388D007E6365 /* OCRSDKClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCRSDKClientTests-Info.plist"; sourceTree = "<group>"; };
 		0AE8EC73174D388D007E6365 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AE8EC75174D388D007E6365 /* OCRSDKClientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRSDKClientTests.h; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE8EC68174D388D007E6365 /* SenTestingKit.framework in Frameworks */,
-				0AE8EC6A174D388D007E6365 /* UIKit.framework in Frameworks */,
 				0AE8EC6B174D388D007E6365 /* Foundation.framework in Frameworks */,
 				0AE8EC6E174D388D007E6365 /* libOCRSDKClient.a in Frameworks */,
 			);
@@ -107,7 +104,6 @@
 			children = (
 				0AE8EC58174D388D007E6365 /* Foundation.framework */,
 				0AE8EC67174D388D007E6365 /* SenTestingKit.framework */,
-				0AE8EC69174D388D007E6365 /* UIKit.framework */,
 				AC7BFDA1168848459332CC68 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -384,7 +380,7 @@
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
-				INFOPLIST_FILE = "OCRSDKClientTests/OCRSDKClientTests-Info.plist";
+				INFOPLIST_FILE = "Tests/OCRSDKClientTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -397,7 +393,7 @@
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
-				INFOPLIST_FILE = "OCRSDKClientTests/OCRSDKClientTests-Info.plist";
+				INFOPLIST_FILE = "Tests/OCRSDKClientTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
