@@ -1,12 +1,12 @@
 #OCRSDKClient
 
-An `AFHTTPClient` subclass for interacting with the ABBYY Cloud OCR SDK webservice API (http://ocrsdk.com).
+An `AFHTTPClient` subclass for interacting with the [ABBYY Cloud OCR SDK webservice API](http://ocrsdk.com) for iOS.
 
-See ABBYY Cloud OCR SDK API Reference on http://ocrsdk.com/documentation/apireference.
+See also [ABBYY Cloud OCR SDK API Reference](http://ocrsdk.com/documentation/apireference).
 
 ##Ussage
 
-OCRSDKClient is available via Cocoa Pods.
+OCRSDKClient is available via [Cocoa Pods](http://cocoapods.org).
 
 ## Requirements
 
