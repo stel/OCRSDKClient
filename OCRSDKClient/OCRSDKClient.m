@@ -114,6 +114,7 @@ static NSString * const kOCRSDKInstallationId = @"com.abbyy.ocrsdk.installation-
 
 - (void)startTaskWithImageData:(NSData *)imageData
 					withParams:(NSDictionary *)processingParams
+                 progressBlock:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))progressBlock
 					   success:(void (^)(NSDictionary *taskInfo))success
 					   failure:(void (^)(NSError *error))failure
 {
@@ -139,7 +140,8 @@ static NSString * const kOCRSDKInstallationId = @"com.abbyy.ocrsdk.installation-
 			failure(error);
 		}
 	}];
-	
+	   
+    [operation setUploadProgressBlock:progressBlock];
 	[self enqueueHTTPRequestOperation:operation];
 }
 
