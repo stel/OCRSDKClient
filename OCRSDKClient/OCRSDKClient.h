@@ -97,14 +97,30 @@
  
  @param imageData An `NSData` object with image data.
  @param processingParams Image processing params.
- @param progressBlock  A block called when an undetermined number of bytes have been uploaded to the server
+ @param progressBlock  A block called when an undetermined number of bytes have been uploaded to the server.
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes a single argument: the `NSDictionary` object with new image processing task task info.
 
  @param failure A block object to be executed when the request operation finishes unsuccessfully. This block has no return value and takes a single argument: the `NSError` object describing error that occurred.
  */
 - (void)startTaskWithImageData:(NSData *)imageData
 					withParams:(NSDictionary *)processingParams
-                 progressBlock:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))progressBlock
+				 progressBlock:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))progressBlock
+					   success:(void (^)(NSDictionary *taskInfo))success
+					   failure:(void (^)(NSError *error))failure;
+
+/**
+ Uploads image data to server and starts image processing.
+ 
+ @param imageData An `NSData` object with image data.
+ @param processingParams Image processing params.
+ @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes a single argument: the `NSDictionary` object with new image processing task task info.
+ 
+ @param failure A block object to be executed when the request operation finishes unsuccessfully. This block has no return value and takes a single argument: the `NSError` object describing error that occurred.
+ 
+ @bug Warning! This method is deprecated and will be removed in next releases. Use `-startTaskWithImageData:withParams:progressBlock:success:failure:` instead.
+ */
+- (void)startTaskWithImageData:(NSData *)imageData
+					withParams:(NSDictionary *)processingParams
 					   success:(void (^)(NSDictionary *taskInfo))success
 					   failure:(void (^)(NSError *error))failure;
 
