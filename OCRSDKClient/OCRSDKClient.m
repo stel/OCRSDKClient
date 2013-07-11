@@ -43,6 +43,7 @@ NSString * const OCRSDKTaskStatusNotEnoughCredits = @"NotEnoughCredits";
 
 static NSString * const kOCRSDKBaseURLString = @"http://cloud.ocrsdk.com";
 static NSString * const kOCRSDKInstallationId = @"com.abbyy.ocrsdk.installation-id";
+static NSString * const kOCRSDKInstallationActivated = @"com.abbyy.ocrsdk.installation-activated";
 
 @implementation OCRSDKClient
 
@@ -84,18 +85,20 @@ static NSString * const kOCRSDKInstallationId = @"com.abbyy.ocrsdk.installation-
 								 failure:(void (^)(NSError *error))failure
 								   force:(BOOL)force
 {
+	NSParameterAssert(deviceId);
 	
-	NSParameterAssert(self.applicationId);
-	NSParameterAssert(self.password);
+	BOOL installationActivated = [[NSUserDefaults standardUserDefaults] boolForKey:kOCRSDKInstallationActivated];
 	
-	if (self.installationId == nil || force) {
+	if(!installationActivated || force) {
+		[self setAuthorizationHeaderWithUsername:self.applicationId password:self.password];
+		
 		[self getPath:@"activateNewInstallation" parameters:@{@"deviceId": deviceId} success:^(AFHTTPRequestOperation *operation, id responseObject) {
 			NSDictionary *responseDictionary = [NSDictionary dictionaryWithXMLData:responseObject];
 			
 			NSString *installationId = [responseDictionary valueForKey:@"authToken"];
-			[[NSUserDefaults standardUserDefaults] setObject:installationId forKey:kOCRSDKInstallationId];
 			
-			NSParameterAssert(self.installationId);
+			[[NSUserDefaults standardUserDefaults] setObject:installationId forKey:kOCRSDKInstallationId];
+			[[NSUserDefaults standardUserDefaults] setBool:YES forKey:kOCRSDKInstallationActivated];
 			
 			[self activateInstallationWithDeviceId:deviceId success:success failure:failure force:NO];
 		} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -110,18 +113,6 @@ static NSString * const kOCRSDKInstallationId = @"com.abbyy.ocrsdk.installation-
 			success();
 		}
 	}
-}
-
-- (void)startTaskWithImageData:(NSData *)imageData
-					withParams:(NSDictionary *)processingParams
-					   success:(void (^)(NSDictionary *taskInfo))success
-					   failure:(void (^)(NSError *error))failure
-{
-	[self startTaskWithImageData:imageData
-					  withParams:processingParams
-				   progressBlock:nil
-						 success:success
-						 failure:failure];
 }
 
 - (void)startTaskWithImageData:(NSData *)imageData
